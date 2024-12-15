@@ -1,0 +1,776 @@
+
+html{
+    scroll-behavior: smooth; /*desplazamiento hacia la sección sea suave,*/
+}
+
+
+body {
+    font-family: 'Sour+Gummy', sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0;
+    margin-top: 0;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+/* ~~~~~~~~~~apartado de la cabecera y todo su contenido~~~~~~~~~~~~~~*/
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    max-width: 600px; /* establece el ancho del elemento*/
+    height: 55px; 
+}
+
+/* apartado logo*/
+.cabecera__logo {
+    max-width: 80px; /* Ajuste para pantallas pequeñas */
+    display: flex;  
+    height: 24px;
+    width: 134.5;
+    margin-left: 50px;
+}
+
+/*elemento que contiene juan bejarano*/
+.cabecera__titulo {
+    font-size: 18px;    
+    margin-top: 10;  /* cantidad de margen superior*/
+    max-width: auto; /*se utiliza para definir el ancho máximo que un elemento */
+    margin-left: -388px; /*margen del lado izquierdo*/
+}
+
+/* apartado de la lista sobre mi hasta contacto */
+.links__lista{
+    display: flex;/* elemento que coloca las palabras en la franja amarrilla*/   
+    align-items: center; /* centra las palabras del inicio*/
+    list-style-type: none; /*elemento que elimina las viñetas*/
+    max-width: 0px; /*tamaño del elemento*/
+    gap: 45px; /*espacio entrre las palabras*/
+    padding: 0;
+}
+
+/*apartado de los links en grupo*/
+.links__elemento{
+    font-size: 18px; /*Tamño de la fuente*/   
+    margin-bottom: auto; /* espacio entre los elemntos de la lista*/
+}
+
+/*apartado de cada uno de los links uno por uno*/
+.links__elemento a{
+    text-decoration: none; /*Quita el subrayado de las palabras*/
+    color: black;  /* Color de la fuente*/
+    display: inline-flex;  /* Usamos inline-flex para alinear los elementos en línea */
+    justify-content: flex-start; /* alinea el contenido a la izquierda*/
+}
+
+.links__elemento_contacto a{
+    text-decoration: none; /*Quita el subrayado de las palabras*/
+    color: black;  /* Color de la fuente*/
+    display: inline-flex;  /* Usamos inline-flex para alinear los elementos en línea */
+    justify-content: flex-start;
+}
+
+/* clase sobre*/
+.sobre {
+    margin-right: 5px;  /* Espacio entre "Sobre" y "mí" */
+}
+
+/* clase mi*/
+.mi {
+    margin-left: auto;  /* Empuja "mí" al lado derecho */
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~apartado de la seccion de informacion~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.Container_informacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1500px; /* Asegura que la imagen no se salga del contenedor */
+    height: 368px; 
+    margin-left: 45px;
+}
+
+
+.informacion_seccion{
+    margin: 20px;
+    flex: auto;
+    padding: 0px;
+    border: -30px;
+    margin-left: 50px;
+}
+
+.Titulo_seccion{
+    font-size: 52px; /*tamaño de la fuente*/
+    margin-bottom: 25px; /*espacio entre el h1 y el p*/
+    text-align: center; /*aliena el titulo*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Parrafo_seccion{
+    font-size: 22px; /* Tamaño del texto del párrafo */
+    margin-top: auto; /*margen superior*/
+    text-align: center; /*alinea el texto*/
+    margin-bottom: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.links__seccion{
+    display: flex;
+    list-style-type: none;
+    gap: 9px;  
+}
+
+/*links github ... Instagram*/
+.links_seccion__elemento a{
+    text-decoration: none;
+    color: black; 
+    font-size: 20px;  
+    margin-left: 145px;   
+}
+/*imagen Github*/
+.I_GitHub{
+    height: 60px; 
+    width: 60px;
+    margin-left: 150px;
+}
+
+/*Imahgen linkedIn*/
+.I_linkedin{
+    height: 60px; 
+    width: 50px;
+    margin-left: 158px;
+}
+
+/*Imagen curriculum*/
+.I_Curriculum{
+    height: 60px; 
+    width: 50px;
+    margin-left: 171px;
+}
+
+.I_Instagram{
+    height: 70px; 
+    width: 70px;
+    margin-left: 158px;
+}
+
+.Imagen_informacion{
+    flex: 1; /* Ocupa el mismo espacio que informacion_seccion */
+    display: flex; /* Opcional: centra la imagen dentro del contenedor */ 
+    margin: 0px;
+    background-color: white;
+}
+
+.Imagen{
+    max-width: 400px; /* Asegura que la imagen no se salga del contenedor */
+    height: 320px; 
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    border: 5px solid #000; /* agrega un borde */
+    margin: 35px;
+    display: block;
+    align-items: flex-start;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Seccion informacion~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*Container padre*/
+.Container_informacion{
+    background-color: white;
+    margin-right: 30px;
+
+}
+
+/*Container hijo que contiene la informacion la imagen y los links*/
+.informacion_seccion{
+    background-color: white;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Seccion Sobre mi ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.Seccion_Sobre_Mi{
+    display: flex;
+    Height: 245px;
+    width: 100%;
+    margin-left: 0 ;
+    margin-right: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color:#fef9e7;
+}
+
+.Sobre_mi{
+    width: 1215px; 
+    Height: 110px;
+    background-color: #fef9e7;
+    text-align: left;
+    margin-top: -19px;
+    margin-left: 135px;
+}
+
+.Titulo_Sobre_mi{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.Parrafo_Sobre_mi{
+    background-color: #fef9e7;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Apartado Skils ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.seccion_Skills{
+    margin-top: 1px;
+    width: 100%;
+    height: 245px;
+    display: flex;                /* Usamos Flexbox */
+    flex-direction: column;       /* Alineación vertical (columna) */
+    align-items: center;          /* Centrar horizontalmente */
+    justify-content: center;      /* Centrar verticalmente */                
+    text-align: center;
+    padding-top: 0;
+}
+
+.Skills{
+    text-align: center;
+    font-size: 24px;
+    color: black;
+}
+
+.Containers_Skills{
+    display:flex ;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 150px;
+}
+
+.nombre{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.HTML{
+    display: flex;
+    flex-direction: column;
+}
+
+.img_HTML{
+    width: 65px;
+    height: 70px;
+}
+
+.css{
+    display: flex;
+    flex-direction: column;
+}
+
+.img_css{
+    width: 65px;
+    height: 70px;
+}
+
+.JavaScript{
+    display: flex;
+    flex-direction: column;
+}
+
+.img_JavaScript{
+    width: 65px;
+    height: 70px;
+}
+
+.React{
+    display: flex;
+    flex-direction: column;
+}
+
+.img_React{
+    width: 80px;
+    height: 70px;
+}
+
+.Phyton{
+    display: flex;
+    flex-direction: column;
+}
+
+.img_Python{
+    width: 60px;
+    height: 70px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Seccion Hobbies ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.seccion_Hobbies{
+    margin-top: 1px;
+    width: 100%;
+    height: 245px;
+    display: flex; /* utilizicacion de flexbox*/
+    flex-direction: column; /* Alineación vertical (columna) */
+    align-items: center;/* Centrar horizontalmente */
+    justify-content: center;/* Centrar verticalmente */                
+    text-align: center;
+    padding-top: 0;
+}
+
+.Hobbies{
+    text-align: center;
+    font-size: 28px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Containers_Hobbies{
+    display:flex ;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 150px;
+}
+
+.nombreH{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.Deporte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.img_Deporte{
+    width: 65px;
+    height: 70px;
+    background-color: white;
+}
+
+.Musica{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.img_Musica{
+    width: 65px;
+    height: 70px;
+}
+
+.Leer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.img_Leer{
+    width: 75px;
+    height: 70px;
+}
+
+.Videojuegos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.img_Videojuegos{
+    width: 130px;
+    height: 70px;
+}
+
+.Familia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.img_Familia{
+    width: 150px;
+    height: 80px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Seccion Formacion ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.Seccion_Formacion_Acadamecica {
+    margin-top: 15px;
+    width: 100%;
+    height: 420px;
+    display: flex; /* utilizicacion de flexbox*/
+    flex-direction: column; /* Alineación vertical (columna) */
+    align-items: center;/* Centrar horizontalmente */
+    justify-content: center;/* Centrar verticalmente */                
+    text-align: center;
+    padding-top: 0;
+    background-color:  #fef9e7;
+}
+
+.Mi_Formacion{
+    text-align: center;
+    font-size: 28px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Formaciones{
+    display:flex ;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 150px;
+}
+
+.Formaciones_Texto{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-size: 18px;
+}
+
+.Info_Formacion{
+    font-size: 17px;
+}
+
+.Ing_Mecatronica{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.img_Ecci{
+    width: 200px;
+    height: 150px;
+    border-radius: 25px;
+    margin: 15px;
+}
+
+.Desarrollo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.Img_Oracle{
+    width: 180px;
+    height: 180px;
+    border-radius: 25px;
+    margin: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.IA{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.img_Talento{
+    width: 180px;
+    height: 150px;
+    border-radius: 25px;
+    margin: 15px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Seccion Experiencia ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.Titulo_Experiencia{
+    text-align: center;
+    font-size: 28px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Numero_Secreto{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+}
+
+.Container1{
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+.img_N_Secreto{
+    width: 500px;
+    height: 350px;
+    border-radius: 25px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Container2{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Titulo{
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Parrafo{
+    font-size: 18px;
+}
+
+.Container_Botones{
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 13px;
+}
+
+.button{
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 20px;
+    border: 3px solid black;
+    background-color: silver;
+    cursor:pointer;
+    border-radius: 10px;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.button:hover{
+    background-color:  #fef9e7;
+}
+
+.Encriptador_Texto{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 15px;
+}
+
+.img_Encriptador{
+    width: 550px;
+    height: 350px;
+    border-radius: 25px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Portafolio_Cliente{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 15px;
+}
+
+.img_Portafolio{
+    width: 550px;
+    height: 350px;
+    border-radius: 25px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Plataforma_Videos{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 15px;
+}
+
+.img_Plataforma{
+    width: 530px;
+    height: 300px;
+    border-radius: 25px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Seccion contacto ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.Seccion_Contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fef9e7;
+}
+
+.Titulo_Contacto{
+    text-align: center;
+    font-size: 28px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Containers_Contacto{
+    display: flex;
+    gap: 25px;
+}
+
+.ContainerC1{
+    border-radius: 25px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_Contacto{
+    width: 350px;
+    height: 400px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContainerC2{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 605px;
+    height: 415px;
+}
+
+.Titulo_C2{
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 40px;
+}
+
+.Parrafo_Contacto{
+    margin-top: 15px;
+}
+
+.Parrafo2_Contacto{
+    margin-top: 10px;
+}
+
+.Container_Inputs{
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+
+.Input_Nombre{
+    width: 370px;
+    height: 30px;
+    text-align:left;
+    pointer-events:all;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input_E-mail{
+    width: 370px;
+    height: 30px;
+    text-align:left;
+    pointer-events:all;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input_Asunto{
+    width: 370px;
+    height: 30px;
+    text-align:left;
+    pointer-events:all;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input_Mensaje{
+    width: 370px;
+    height: 60px;
+    text-align:left;
+    pointer-events:all;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.button_Enviar{
+    width: 60px;
+    height: 20px;
+    text-align:center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor:pointer;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.button_Enviar:hover{
+    background-color: #fef9e7;
+}
+
+.Seccion_Footer{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer{
+    font-size: 20px;
+}
+
+.Año{
+    font-size: 18px;
+}
+

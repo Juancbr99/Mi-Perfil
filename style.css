@@ -774,3 +774,131 @@ body {
     font-size: 18px;
 }
 
+@media (max-width: 768px) {
+    /* Ajustes generales */
+    body {
+        font-size: 14px;
+        padding: 0 10px; /* Reduce márgenes y padding */
+    }
+
+    .cabecera {
+        flex-direction: column;
+        align-items: flex-start; /* Alinea contenido a la izquierda */
+        padding: 10px;
+    }
+
+    .cabecera__logo {
+        margin: 0 auto;
+        width: 100px;
+        height: auto; /* Ajusta la proporción */
+    }
+
+    .cabecera__titulo {
+        margin: 10px 0;
+        font-size: 16px; /* Reduce el tamaño del texto */
+        text-align: center; /* Centra el texto */
+    }
+
+    .links__lista {
+        flex-direction: column; /* Cambia los links a columna */
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    /* Sección información */
+    .Container_informacion {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center; /* Centra el contenido */
+        padding: 10px;
+    }
+
+    .informacion_seccion {
+        margin: 0 auto;
+    }
+
+    .Imagen {
+        max-width: 200px;
+        height: auto; /* Ajusta la proporción */
+        margin: 0 auto;
+    }
+
+    .links_seccion__elemento a {
+        margin: 0 auto; /* Centra los iconos */
+        font-size: 16px; /* Reduce el tamaño de texto */
+    }
+
+    /* Sección "Sobre mí" */
+    .Seccion_Sobre_Mi {
+        padding: 10px;
+    }
+
+    .Sobre_mi {
+        width: 100%; /* Se adapta al ancho de la pantalla */
+        margin: 0;
+        padding: 10px;
+    }
+
+    /* Skills y hobbies */
+    .Containers_Skills, .Containers_Hobbies {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .img_HTML, .img_css, .img_JavaScript, .img_React, .img_Python, .img_Deporte, .img_Musica, .img_Leer, .img_Videojuegos, .img_Familia {
+        width: 50px;
+        height: 50px; /* Ajusta las imágenes */
+    }
+
+    /* Formación académica */
+    .Formaciones {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .Ing_Mecatronica, .Desarrollo, .IA {
+        width: 90%; /* Reduce el tamaño de los contenedores */
+        margin: 0 auto;
+    }
+
+    /* Experiencia */
+    .Numero_Secreto, .Encriptador_Texto, .Portafolio_Cliente, .Plataforma_Videos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .img_N_Secreto, .img_Encriptador, .img_Portafolio, .img_Plataforma {
+        width: 100%; /* La imagen ocupa todo el ancho disponible */
+        height: auto; /* Mantiene la proporción */
+    }
+
+    /* Contacto */
+    .Containers_Contacto {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .img_Contacto {
+        width: 100%; /* Ajusta al ancho del contenedor */
+        height: auto; /* Mantiene la proporción */
+    }
+
+    .ContainerC2 {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        padding: 10px;
+    }
+
+    .Container_Inputs {
+        width: 100%;
+    }
+
+    .Input_Nombre, .input_E-mail, .input_Asunto, .input_Mensaje {
+        width: 100%; /* Campos adaptables */
+    }
+
+    /* Footer */
+    .Seccion_Footer {
+        padding: 10px;
+    }
+}
+
